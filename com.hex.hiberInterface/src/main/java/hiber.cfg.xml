@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration>
+<session-factory>
+<!--  JDBC Database connection settings  -->
+<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/Login?serverTimezone=UTC</property>
+<property name="hibernate.connection.username">root</property>
+<property name="hibernate.connection.password">Nivetha29@03</property>
+<!--  Authentication plugin property  -->
+<property name="hibernate.connection.auth_plugin">mysql_native_password</property>
+<!--  Specify dialect  -->
+<property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+<!--  Specify schema management  -->
+<property name="hibernate.hbm2ddl.auto">update</property>
+
+<!--  Other properties  -->
+</session-factory>
+</hibernate-configuration>
