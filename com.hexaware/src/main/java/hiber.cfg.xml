@@ -1,0 +1,37 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+ 
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                          http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="res1" class="com.hexa1.spring1.com.hexa1.spring1.Result">
+<property name="marks" value="100"/>
+<property name="remarks" value="Pass"/>
+
+</bean>
+
+
+<bean id="stud1" class="com.hexa1.spring1.com.hexa1.spring1.Student">
+<property name="Roll" value="1" />
+<property name="Name" value="Raja" />
+	<property name="Fee" value="800" />
+<property name="res" ref="res1"/>
+
+</bean>
+
+<bean id="stud2" class="com.hexa1.spring1.com.hexa1.spring1.Student">
+<property name="Roll" value="2" />
+<property name="Name" value="Arun" />
+<property name="Fee" value="600" />
+
+</bean>
+
+<bean id = "book1" class = "com.hexa1.spring1.com.hexa1.spring1.Book">
+<constructor-arg index="0" value="1"/>
+<constructor-arg index="1" value="Java"/>
+<constructor-arg index="2" value="1000"/>
+
+</bean>
+
+</beans>
